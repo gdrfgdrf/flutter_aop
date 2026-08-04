@@ -508,7 +508,7 @@ class AopGenerator extends Generator {
     buffer
       ..writeln('  return true;')
       ..writeln('}')
-      ..writeln('@pragma(\'vm:entry-point\', \'flutter_aop_bootstrap\')')
+      ..writeln('@pragma(\'vm:entry-point\', \'get\')')
       ..writeln(
         'final bool $bootstrapField = '
         'AopBootstrapper.instance.register($initFunction);',
